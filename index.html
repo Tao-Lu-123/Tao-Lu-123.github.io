@@ -108,27 +108,25 @@
   <main class="container">
     <section class="card">
       <h1>Tao Lu</h1>
-      <p class="subtitle">Ph.D. Student in Computer Science and Technology</p>
+      <p class="subtitle">Postdoctoral Research Fellow</p>
       <div class="meta">
-        <span>GitHub: <a href="https://github.com/speakspeak" target="_blank" rel="noopener noreferrer">github.com/speakspeak</a></span>
+        <span>Homepage: <a href="https://tao-lu-123.github.io" target="_blank" rel="noopener noreferrer">tao-lu-123.github.io</a></span>
         <span>Email: <a href="mailto:lutaocc2020@gmail.com">lutaocc2020@gmail.com</a></span>
         <span>LinkedIn: <a href="https://www.linkedin.com/in/murat-can-karacabey-568a96b1/" target="_blank" rel="noopener noreferrer">Profile</a></span>
+        <span>GitHub: <a href="https://github.com/muratcankaracabey" target="_blank" rel="noopener noreferrer">github.com/muratcankaracabey</a></span>
       </div>
     </section>
 
     <section class="card">
       <h2>About Me</h2>
       <p>
-        I am a fifth-year Ph.D. student at Zhejiang University in the Department of Computer
-        Science and Technology, with an expected graduation date in June 2025. My primary
-        research interest is hardware acceleration for applied cryptography, and I recently focus
-        on GPU acceleration for zero-knowledge proof systems and their applications.
-      </p>
-      <p>
-        I am advised by Prof.
-        <a href="http://arc.zju.edu.cn/2018/0620/c20685a817882/page.htm" target="_blank" rel="noopener noreferrer">Wenzhi Chen</a>,
-        and I also collaborate closely with Prof.
+        I am currently a Postdoctoral Research Fellow at the National University of Singapore
+        (NUS), working with Prof.
         <a href="https://zjhzjh123.github.io/" target="_blank" rel="noopener noreferrer">Jiaheng Zhang</a>.
+        I received my Ph.D. under the supervision of Prof.
+        <a href="http://arc.zju.edu.cn/2018/0620/c20685a817882/page.htm" target="_blank" rel="noopener noreferrer">Wenzhi Chen</a>.
+        My research primarily focuses on leveraging GPU to optimize Zero-Knowledge Proofs and
+        AI workloads.
       </p>
     </section>
 
@@ -139,19 +137,42 @@
           <div class="item-title">Zhejiang University, Hangzhou, China</div>
           <div class="item-time">2016.09 - 2020.06</div>
           <div>Bachelor of Science in Geo-information Science and Technology</div>
-          <div class="small">Noteworthy courses: computer architecture, discrete mathematics, parallel programming. GPA: 3.86/4.0.</div>
         </li>
         <li>
           <div class="item-title">Zhejiang University, Hangzhou, China</div>
-          <div class="item-time">2020.09 - 2025.06</div>
-          <div>Ph.D. Student in Computer Science and Technology</div>
-          <div class="small">Worked on GPU acceleration for zero-knowledge proof and related applications. Advised by Prof. Wenzhi Chen.</div>
+          <div class="item-time">2020.09 - 2025.09</div>
+          <div>Ph.D. in Computer Science and Technology</div>
+          <div class="small">Mainly worked on GPU acceleration for Zero-Knowledge Proofs and large language models. Advised by Prof. Wenzhi Chen.</div>
         </li>
         <li>
           <div class="item-title">National University of Singapore, Singapore</div>
           <div class="item-time">2023.12 - 2024.07</div>
-          <div>Visiting Scholar in Applied Cryptography</div>
-          <div class="small">Worked on zero-knowledge proofs and their applications. Advised by Prof. Jiaheng Zhang.</div>
+          <div>Visiting Scholar</div>
+          <div class="small">Mainly worked on GPU acceleration for Zero-Knowledge Proofs. Advised by Jiaheng Zhang.</div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Employment</h2>
+      <ul>
+        <li>
+          <div class="item-title">National University of Singapore, Singapore</div>
+          <div class="item-time">2025.09 - Present</div>
+          <div>Postdoctoral Research Fellow</div>
+          <div class="small">Mainly work on GPU acceleration for ZKPs and AI workloads, hosted by Prof. Jiaheng Zhang.</div>
+        </li>
+        <li>
+          <div class="item-title">Polyhedra Network</div>
+          <div class="item-time">2024.06 - 2025.09</div>
+          <div>Software Engineering Intern</div>
+          <div class="small">Worked on accelerating ZKPs for neural networks.</div>
+        </li>
+        <li>
+          <div class="item-title">Primeblock</div>
+          <div class="item-time">2022.12 - 2023.12</div>
+          <div>Software Engineering Intern</div>
+          <div class="small">Worked on accelerating multi-scalar multiplication on GPUs.</div>
         </li>
       </ul>
     </section>
@@ -160,15 +181,32 @@
       <h2>Projects</h2>
       <ul>
         <li>
-          <div class="item-title">Docker Hub Security</div>
-          <div class="item-time">2020.01 - 2020.04</div>
-          <div>A detection tool (powered by VirusTotal) for malicious Docker Hub images.</div>
+          <div class="item-title">GPU Inference Acceleration for LLMs</div>
+          <div class="item-time">2025.02 - 2025.10</div>
+          <div>
+            Proposed a high-performance GPU inference scheme for LLMs using sparse weight
+            matrices. Implemented an optimized sparse matrix-matrix multiplication kernel that
+            leverages GPU features to achieve superior inference throughput.
+            <a href="https://anonymous.4open.science/r/spmm-32E1" target="_blank" rel="noopener noreferrer">Code</a>
+          </div>
+        </li>
+        <li>
+          <div class="item-title">BatchZK</div>
+          <div class="item-time">2023.12 - 2024.08</div>
+          <div>
+            A fully pipelined GPU-accelerated system for batch generation of zero-knowledge proofs,
+            with a focus on optimizing the sumcheck protocol. Designed scheduling and memory
+            management strategies to maximize GPU utilization and throughput for batched proving
+            workloads.
+          </div>
         </li>
         <li>
           <div class="item-title">ZPrize (3rd Place)</div>
-          <div class="item-time">2022.07 - 2022.09</div>
+          <div class="item-time">2022.04 - 2022.10</div>
           <div>
-            A GPU implementation of multi-scalar multiplication achieving 1.67x speedup over the reference.
+            Implemented a high-performance GPU-based multi-scalar multiplication (MSM) algorithm
+            for ZKPs as part of the ZPrize competition. Achieved a 1.67x speedup over the reference
+            implementation and improved GPU utilization and memory throughput.
             <a href="https://github.com/speakspeak/msm-gpu.git" target="_blank" rel="noopener noreferrer">Code</a>
           </div>
         </li>
@@ -179,14 +217,14 @@
       <h2>Papers</h2>
       <ul>
         <li>
-          Peiyu Liu, Shouling Ji, Lirong Fu, Kangjie Lu, Xuhong Zhang, Wei-Han Lee, <strong>Tao Lu</strong>, Wenzhi Chen, and Raheem Beyah.
-          "Understanding the security risks of docker hub." (ESORICS 2020).
+          <strong>Tao Lu</strong>, Haoyu Wang, Zonghui Wang, Keshen Xiang, Jiaheng Zhang, Wenzhi Chen.
+          "Accelerating GPU Inference of Large Language Models with Moderately Unstructured Sparse Weight Matrices." (DAC 2026).
+          <a href="https://anonymous.4open.science/r/spmm-32E1" target="_blank" rel="noopener noreferrer">Code</a>
         </li>
         <li>
-          <strong>Tao Lu</strong>, Chengkun Wei, Ruijing Yu, Chaochao Chen, Wenjing Fang, Lei Wang, Zeke Wang, and Wenzhi Chen.
-          "cuZK: accelerating zero-knowledge proof with a faster parallel multi-scalar multiplication algorithm on GPUs." (CHES 2023).
-          <a href="https://eprint.iacr.org/2022/1321" target="_blank" rel="noopener noreferrer">Paper</a>,
-          <a href="https://github.com/speakspeak/cuZK.git" target="_blank" rel="noopener noreferrer">Code</a>
+          <strong>Tao Lu</strong>, Haoyu Wang, Wenjie Qu, Zonghui Wang, Jinye He, Tianyang Tao, Wenzhi Chen, Jiaheng Zhang.
+          "zkNN: An Efficient and Extensible Zero-knowledge Proof Framework for Neural Networks."
+          <a href="https://eprint.iacr.org/2024/703" target="_blank" rel="noopener noreferrer">Paper</a>
         </li>
         <li>
           <strong>Tao Lu</strong>, Yuxun Chen, Zonghui Wang, Xiaohang Wang, Wenzhi Chen, Jiaheng Zhang.
@@ -194,30 +232,14 @@
           <a href="https://eprint.iacr.org/2024/1862" target="_blank" rel="noopener noreferrer">Paper</a>
         </li>
         <li>
-          <strong>Tao Lu</strong>, Haoyu Wang, Wenjie Qu, Zonghui Wang, Jinye He, Tianyang Tao, Wenzhi Chen, Jiaheng Zhang.
-          "zkNN: An Efficient and Extensible Zero-knowledge Proof Framework for Neural Networks." (Under Review).
-          <a href="https://eprint.iacr.org/2024/703" target="_blank" rel="noopener noreferrer">Paper</a>
-        </li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>Employment</h2>
-      <ul>
-        <li>
-          <div class="item-title">Alibaba Group</div>
-          <div class="item-time">2020.03 - 2020.09</div>
-          <div>Software engineering intern. Worked on accelerating network performance optimization.</div>
+          <strong>Tao Lu</strong>, Chengkun Wei, Ruijing Yu, Chaochao Chen, Wenjing Fang, Lei Wang, Zeke Wang, and Wenzhi Chen.
+          "cuZK: Accelerating Zero-Knowledge Proof with a Faster Parallel Multi-scalar Multiplication Algorithm on GPUs." (CHES 2023).
+          <a href="https://eprint.iacr.org/2022/1321" target="_blank" rel="noopener noreferrer">Paper</a>,
+          <a href="https://github.com/speakspeak/cuZK.git" target="_blank" rel="noopener noreferrer">Code</a>
         </li>
         <li>
-          <div class="item-title">Primeblock</div>
-          <div class="item-time">2022.12 - 2023.12</div>
-          <div>Software engineering intern. Worked on accelerating multi-scalar multiplication on GPUs.</div>
-        </li>
-        <li>
-          <div class="item-title">Polyhedra Network</div>
-          <div class="item-time">2024.06 - Present</div>
-          <div>Software engineering intern. Working on zero-knowledge proofs for neural networks.</div>
+          Peiyu Liu, Shouling Ji, Lirong Fu, Kangjie Lu, Xuhong Zhang, Wei-Han Lee, <strong>Tao Lu</strong>, Wenzhi Chen, and Raheem Beyah.
+          "Understanding the security risks of Docker Hub." (ESORICS 2020).
         </li>
       </ul>
     </section>
@@ -226,7 +248,6 @@
       <h2>Skills</h2>
       <ul>
         <li>Programming Languages: C/C++, CUDA, Python, Verilog, Rust.</li>
-        <li>Cryptography Theory: Zero-knowledge proofs, security reduction, simulation.</li>
       </ul>
     </section>
   </main>
