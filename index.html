@@ -1,7 +1,234 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tao Lu | Personal Homepage</title>
+  <style>
+    :root {
+      --bg: #f7f9fc;
+      --card: #ffffff;
+      --text: #1a2333;
+      --muted: #53627a;
+      --primary: #1f6feb;
+      --border: #d9e1ec;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+      line-height: 1.65;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 28px 18px 56px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 22px;
+      margin-bottom: 16px;
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 10px;
+      line-height: 1.3;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      color: #153a75;
+    }
+
+    p {
+      margin: 0 0 10px;
+    }
+
+    ul {
+      margin: 8px 0 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      margin-bottom: 14px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 20px;
+      margin-top: 8px;
+      color: var(--muted);
+    }
+
+    .item-title {
+      font-weight: 600;
+    }
+
+    .item-time {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .small {
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
 <body>
-  <h1>hello</h1>
-  <p>this is my homepage</p>
+  <main class="container">
+    <section class="card">
+      <h1>Tao Lu</h1>
+      <p class="subtitle">Ph.D. Student in Computer Science and Technology</p>
+      <div class="meta">
+        <span>GitHub: <a href="https://github.com/speakspeak" target="_blank" rel="noopener noreferrer">github.com/speakspeak</a></span>
+        <span>Email: <a href="mailto:lutaocc2020@gmail.com">lutaocc2020@gmail.com</a></span>
+        <span>LinkedIn: <a href="https://www.linkedin.com/in/murat-can-karacabey-568a96b1/" target="_blank" rel="noopener noreferrer">Profile</a></span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>About Me</h2>
+      <p>
+        I am a fifth-year Ph.D. student at Zhejiang University in the Department of Computer
+        Science and Technology, with an expected graduation date in June 2025. My primary
+        research interest is hardware acceleration for applied cryptography, and I recently focus
+        on GPU acceleration for zero-knowledge proof systems and their applications.
+      </p>
+      <p>
+        I am advised by Prof.
+        <a href="http://arc.zju.edu.cn/2018/0620/c20685a817882/page.htm" target="_blank" rel="noopener noreferrer">Wenzhi Chen</a>,
+        and I also collaborate closely with Prof.
+        <a href="https://zjhzjh123.github.io/" target="_blank" rel="noopener noreferrer">Jiaheng Zhang</a>.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <div class="item-title">Zhejiang University, Hangzhou, China</div>
+          <div class="item-time">2016.09 - 2020.06</div>
+          <div>Bachelor of Science in Geo-information Science and Technology</div>
+          <div class="small">Noteworthy courses: computer architecture, discrete mathematics, parallel programming. GPA: 3.86/4.0.</div>
+        </li>
+        <li>
+          <div class="item-title">Zhejiang University, Hangzhou, China</div>
+          <div class="item-time">2020.09 - 2025.06</div>
+          <div>Ph.D. Student in Computer Science and Technology</div>
+          <div class="small">Worked on GPU acceleration for zero-knowledge proof and related applications. Advised by Prof. Wenzhi Chen.</div>
+        </li>
+        <li>
+          <div class="item-title">National University of Singapore, Singapore</div>
+          <div class="item-time">2023.12 - 2024.07</div>
+          <div>Visiting Scholar in Applied Cryptography</div>
+          <div class="small">Worked on zero-knowledge proofs and their applications. Advised by Prof. Jiaheng Zhang.</div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <div class="item-title">Docker Hub Security</div>
+          <div class="item-time">2020.01 - 2020.04</div>
+          <div>A detection tool (powered by VirusTotal) for malicious Docker Hub images.</div>
+        </li>
+        <li>
+          <div class="item-title">ZPrize (3rd Place)</div>
+          <div class="item-time">2022.07 - 2022.09</div>
+          <div>
+            A GPU implementation of multi-scalar multiplication achieving 1.67x speedup over the reference.
+            <a href="https://github.com/speakspeak/msm-gpu.git" target="_blank" rel="noopener noreferrer">Code</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Papers</h2>
+      <ul>
+        <li>
+          Peiyu Liu, Shouling Ji, Lirong Fu, Kangjie Lu, Xuhong Zhang, Wei-Han Lee, <strong>Tao Lu</strong>, Wenzhi Chen, and Raheem Beyah.
+          "Understanding the security risks of docker hub." (ESORICS 2020).
+        </li>
+        <li>
+          <strong>Tao Lu</strong>, Chengkun Wei, Ruijing Yu, Chaochao Chen, Wenjing Fang, Lei Wang, Zeke Wang, and Wenzhi Chen.
+          "cuZK: accelerating zero-knowledge proof with a faster parallel multi-scalar multiplication algorithm on GPUs." (CHES 2023).
+          <a href="https://eprint.iacr.org/2022/1321" target="_blank" rel="noopener noreferrer">Paper</a>,
+          <a href="https://github.com/speakspeak/cuZK.git" target="_blank" rel="noopener noreferrer">Code</a>
+        </li>
+        <li>
+          <strong>Tao Lu</strong>, Yuxun Chen, Zonghui Wang, Xiaohang Wang, Wenzhi Chen, Jiaheng Zhang.
+          "BatchZK: A Fully Pipelined GPU-Accelerated System for Batch Generation of Zero-Knowledge Proofs." (ASPLOS 2025).
+          <a href="https://eprint.iacr.org/2024/1862" target="_blank" rel="noopener noreferrer">Paper</a>
+        </li>
+        <li>
+          <strong>Tao Lu</strong>, Haoyu Wang, Wenjie Qu, Zonghui Wang, Jinye He, Tianyang Tao, Wenzhi Chen, Jiaheng Zhang.
+          "zkNN: An Efficient and Extensible Zero-knowledge Proof Framework for Neural Networks." (Under Review).
+          <a href="https://eprint.iacr.org/2024/703" target="_blank" rel="noopener noreferrer">Paper</a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Employment</h2>
+      <ul>
+        <li>
+          <div class="item-title">Alibaba Group</div>
+          <div class="item-time">2020.03 - 2020.09</div>
+          <div>Software engineering intern. Worked on accelerating network performance optimization.</div>
+        </li>
+        <li>
+          <div class="item-title">Primeblock</div>
+          <div class="item-time">2022.12 - 2023.12</div>
+          <div>Software engineering intern. Worked on accelerating multi-scalar multiplication on GPUs.</div>
+        </li>
+        <li>
+          <div class="item-title">Polyhedra Network</div>
+          <div class="item-time">2024.06 - Present</div>
+          <div>Software engineering intern. Working on zero-knowledge proofs for neural networks.</div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Skills</h2>
+      <ul>
+        <li>Programming Languages: C/C++, CUDA, Python, Verilog, Rust.</li>
+        <li>Cryptography Theory: Zero-knowledge proofs, security reduction, simulation.</li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
